@@ -1,0 +1,44 @@
+/* استيراد الخط العام وتنسيق حركة التمرير */
+html {
+  scroll-behavior: smooth;
+  font-family: 'Tajawal', sans-serif;
+}
+
+/* أزرار الفلترة */
+.filter-btn {
+  background-color: #18181b;
+  color: #a1a1aa;
+  padding: 0.5rem 1.25rem;
+  border-radius: 9999px;
+  font-weight: 700;
+  font-size: 0.875rem;
+  transition: all 0.2s ease-in-out;
+  border: 1px solid #27272a;
+}
+
+.filter-btn:hover {
+  background-color: #27272a;
+  color: #ffffff;
+}
+
+.active-filter {
+  background-color: #f59e0b !important;
+  color: #000000 !important;
+  border-color: #f59e0b !important;
+}
+
+/* حركة الكروت عند الظهور */
+.menu-card {
+  animation: fadeIn 0.3s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

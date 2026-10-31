@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مطعم سناك برجر | أطيب برجر في بغداد</title>
+  <!-- تضمين خط تجوال العربي الاحترافي -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;900&display=swap" rel="stylesheet">
+  <!-- مكتبة Tailwind CSS للتصميم المتجاوب السريع -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- ملف التنسيقات الخاص بنا -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-zinc-950 text-white selection:bg-amber-500 selection:text-black">
+
+  <!-- شريط الملاحة العلوي -->
+  <header class="sticky top-0 z-40 bg-zinc-950/90 backdrop-blur-md border-b border-zinc-800">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <span class="text-2xl">🍔</span>
+        <span class="text-xl font-black text-amber-500 tracking-wide">SNACK BURGER</span>
+      </div>
+      <div class="flex items-center gap-3">
+        <a href="tel:07700000000" class="text-xs sm:text-sm font-bold text-zinc-300 hover:text-white transition">
+          📞 07700000000
+        </a>
+        <a href="#menu" class="bg-amber-500 hover:bg-amber-600 text-black px-4 py-2 rounded-xl text-xs sm:text-sm font-extrabold transition">
+          المنيو
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- القسم الترحيبي (Hero Section) -->
+  <section class="py-16 md:py-24 px-4 text-center max-w-4xl mx-auto">
+    <span class="bg-amber-500/10 text-amber-400 border border-amber-500/20 text-xs font-bold px-3 py-1.5 rounded-full inline-block mb-4">
+      لحم بلدي طازج يومياً 🥩
+    </span>
+    <h1 class="text-4xl md:text-6xl font-black leading-tight mb-6">
+      الطعم الحقيقي للبرجر المشوي <br class="hidden sm:inline">
+      <span class="text-amber-500">على أصوله في بغداد</span>
+    </h1>
+    <p class="text-zinc-400 text-sm md:text-base max-w-2xl mx-auto mb-8 leading-relaxed">
+      نستخدم أجود أنواع اللحم العراقي الطازج، صوصاتنا الخاصة المحضرة يومياً، وخبز بطاطا ناعم يذوب بالفم. اطلب الآن واصل لباب بيتك حار ومقرمش!
+    </p>
+    <a href="#menu" class="inline-block bg-amber-500 hover:bg-amber-400 text-black px-8 py-3.5 rounded-2xl font-black text-base shadow-lg shadow-amber-500/20 transition transform active:scale-95">
+      تصفح القائمة واطلب الآن 👇
+    </a>
+  </section>
+
+  <!-- فلاتر المنيو -->
+  <section id="menu" class="max-w-6xl mx-auto px-4 pt-6 pb-4">
+    <div class="flex items-center justify-center gap-2 overflow-x-auto pb-2">
+      <button class="filter-btn active-filter" data-category="all">الكل</button>
+      <button class="filter-btn" data-category="burger">البرجر 🍔</button>
+      <button class="filter-btn" data-category="sides">المقبلات 🍟</button>
+      <button class="filter-btn" data-category="drinks">المشروبات 🥤</button>
+    </div>
+  </section>
+
+  <!-- شبكة الوجبات (Menu Grid) -->
+  <section class="max-w-6xl mx-auto px-4 py-6">
+    <div id="menu-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- الوجبات تتولد ديناميكياً من ملف app.js لسهولة التعديل والإضافة -->
+    </div>
+  </section>
+
+  <!-- تذييل الموقع وحقوق المطور (سابقة أعمالك لفايفر) -->
+  <footer class="mt-20 border-t border-zinc-900 bg-zinc-950 py-10 px-4 text-center">
+    <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-zinc-500">
+      <p>© 2026 مطعم سناك برجر. جميع الحقوق محفوظة.</p>
+      <p class="text-zinc-400">
+        تم التطوير والتصميم بواسطة
+        <a href="https://yourportfolio.link" target="_blank" class="text-amber-500 font-bold hover:underline">
+          [اسمك هنا - Full-Stack Developer]
+        </a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- ملف الجافاسكربت -->
+  <script src="app.js"></script>
+</body>
+</html>
